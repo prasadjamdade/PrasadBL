@@ -28,7 +28,7 @@ perday(){
          read -p "Enter the per day pay amount: " b;
          if (($(($sal%$b)) == 0))
          then
-            echo "The Employee worked for $(($sal / $b)) days";
+            echo "The Employee worked for $(($(($sal / $b)) * 8)) hours";
          else
             echo "Invalid Payment Data."
          fi
